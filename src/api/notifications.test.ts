@@ -61,7 +61,7 @@ describe('notifications API', () => {
         expect(result).toBe(response);
         expect(mockFetch).toHaveBeenCalledWith(
             expect.stringContaining('/users/1/fcm-token'),
-            expect.objectContaining({method: 'POST'})
+            expect.objectContaining({method: 'PATCH'})
         );
     });
 

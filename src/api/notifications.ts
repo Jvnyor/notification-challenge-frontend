@@ -45,7 +45,7 @@ export const sendNotification = async (notificationData: INotificationRequest): 
  */
 export const updateUserFCMToken = async (userId: number, token: string): Promise<Response> => {
     const response = await fetch(`${API_BASE_URL}/users/${userId}/fcm-token`, {
-        method: 'POST',
+        method: 'PATCH',
         headers: {
             'Content-Type': 'application/json',
         },
